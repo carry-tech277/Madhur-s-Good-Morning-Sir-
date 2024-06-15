@@ -1,0 +1,14 @@
+# "Time-Based Greeting Program"
+import time
+
+current_time = time.strftime('%H:%M:%S %p')
+print(current_time)
+
+if(current_time >= '04:00:00 AM' and current_time <= '11:59:59 AM'):
+  print("Good Morning Sir")
+elif(current_time >= '12:00:00 PM' and current_time <= '04:29:59 PM'):
+  print("Good Afternoon Sir")
+elif(current_time >= '04:30:00 PM' and current_time <= '07:59:59 PM'):
+  print("Good Evening Sir")
+else:
+  print("Good Night Sir")
